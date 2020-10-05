@@ -30,7 +30,7 @@ app.use(flash());
 
 // Init Session Store
 const STORE = new SessionStore({
-    uri: process.env.DB_URI,
+    uri: "mongodb+srv://EzzAldin:Naruto74@cluster0.cufwz.mongodb.net/GalleryApp?retryWrites=true&w=majority",
     collection: 'sessions'
 });
 app.use(session({

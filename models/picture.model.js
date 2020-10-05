@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const DB_URI = process.env.DB_URI;
+const DB_URI = "mongodb+srv://EzzAldin:Naruto74@cluster0.cufwz.mongodb.net/GalleryApp?retryWrites=true&w=majority";
 
 const pictureSchema = new mongoose.Schema({
     picture: {
