@@ -102,10 +102,6 @@ h1 {
     text-align: center;
 }
 
-#onlineFriends a {
-    text-decoration: none;
-}
-
 .br {
     background-color: #8a2b8a;
     color: #fff;
@@ -121,100 +117,67 @@ h1 {
     background-color: #8a2b8a;
 }
 
-.chat .messages {
-    height: 83vh;
-    padding: 15px;
-    position: relative;
+.card-body .btn-secondary:hover {
+    color: #70c87f;
 }
 
-.chat #messages-container {
-    height: 85%;
-    overflow: auto;
-}
-
-.chat .messages-form {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.chat .messages-form textarea {
-    height: 50px;
-    resize: none;
-    width: 80%;
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.chat .messages-form button {
-    position: relative;
-    top: -20px;
-}
-
-.chat a {
-    text-align: center;
+.showcom a {
     text-decoration: none;
-    color: #000;
+    font-size: 2rem;
+    color: #fff;
+    font-family: JosefinSansimport;
+    font-weight: bolder;
+}
+.commentBody {
+    color: #70c87f;
+    font-family: JosefinSansimport;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-left: 5rem;
 }
 
 .hidden {
     visibility: hidden;
-}
+} 
 
-.chat span.msg {
-    display: block;
-    width: max-content;
-    margin-bottom: 10px;
-    padding: 10px 20px;
-    font-size: 20px;
+.comments label {
     color: #fff;
-    border-radius: 20px;
-    background-color: #007bff;
-    width: 80%;
+    font-family: JosefinSansimport;
+    font-weight: bolder;
+    font-size: larger;
 }
 
-.chat .messages {
-    height: 83vh;
-    padding: 15px;
-    position: relative;
+.btn-pic:hover {
+    color: #70c87f;
 }
 
-.chat #messages-container {
-    height: 85%;
-    overflow: auto;
-    border: 2px solid #dedede;
-    background-color: #dfd9d92e;
-    padding: 10px;
+#likeCount {
+    color: #70c87f;
+    font-family: JosefinSansimport;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 1rem;
 }
 
-.chat span.msg.left {
-    background: #8a2b8a;
-    width: 80%;
+#like-container h4 {
+    color: #70c87f;
+    font-family: JosefinSansimport;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
 }
 
-.chat span.msg.right {
-    background: #7d7d7d;
-    margin-left: 50%;
-    width: 80%;
-    text-align: right;
-    margin-left: auto;
+.btnColor {
+    color: #f81010;
 }
 
-.chat .messages-form {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.commentL {
+    color: #70c87f;
+    font-family: JosefinSansimport;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
 }
 
-.chat .messages-form textarea {
-    height: 50px;
-    resize: none;
-    width: 80%;
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.chat .messages-form button {
-    position: relative;
-    top: -20px;
-}

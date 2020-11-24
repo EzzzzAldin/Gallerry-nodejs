@@ -3,6 +3,7 @@ require('dotenv').config();
 
 const express = require('express');
 const path =  require('path');
+const socketIO = require('socket.io');
 
 // Require Session
 const session = require('express-session');
@@ -18,6 +19,15 @@ const profileRouter = require('./routes/profile.route');
 
 // Server Express
 const app = express();
+// Create Server Http To Sockit Io
+const server = require('http').createServer(app);
+
+// Run Sockit IO
+const io = socketIO(server);
+
+// Get Function lithen Comment
+require('./sockets/like.socket')(io);
+require('./sockets/comment.soket')(io);
 
 
 
@@ -30,7 +40,7 @@ app.use(flash());
 
 // Init Session Store
 const STORE = new SessionStore({
-    uri: "mongodb+srv://EzzAldin:Naruto74@cluster0.cufwz.mongodb.net/GalleryApp?retryWrites=true&w=majority",
+    uri: process.env.DB_URI,
     collection: 'sessions'
 });
 app.use(session({
@@ -70,6 +80,6 @@ app.use((req, res, next) => {
     });
 });
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
     console.log(`Server run on Port ${PORT}`);
 });
